@@ -1,0 +1,41 @@
+1- When you have to add a feature to a program but the code is not structured
+  in a convenient way, first refactor the program to make it easy to add the
+  feature, then add the feature.
+
+2- As soon as someone does need to understand how that code works, and
+    struggles to follow it, then you have to do something about it.
+
+3- Before you start refactoring, make sure you have a solid suite of tests.
+    These tests must be self-checking.
+
+4- When refactoring a long function , I mentally try to identify points that
+     separate different parts of the overall behavior
+
+5- Once I've made this change, I immediately compile and test to see if I've
+    broken anything. It's an important habit to test after every refactoring
+
+6- Refactoring changes the programs in small steps, so if you make a mistake,
+    it is easy to find where the bug is.
+
+7 - In this case the tests passed, so my next step is to commit the change to
+  my local version control system. I use a version control system, such as git or
+  mercurial, that allows me to make private commits. I commit after each
+  successful refactoring, so I can easily get back to a working state should I
+  mess up later. I then squash changes into more significant commits before I
+  push the changes to a shared repository.
+
+8- Once I've used Extract Function, I take a look at what I've extracted to see
+  if there are any quick and easy things I can do to clarify the extracted
+  function. The first thing I do is rename some of the variables to make them
+  clearer.
+
+9- Any fool can write code that a computer can understand. Good programmers
+  write code that humans can understand.
+
+10- If your refactoring introduces performance slow-downs, finish refactoring
+    first and do performance tuning afterwards.
+
+11- When programming, follow the camping rule: Always leave the code base
+    healthier than when you found it.
+
+12- The true test of good code is how easy it is to change it.
